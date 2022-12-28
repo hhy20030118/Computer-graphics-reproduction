@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>resouses/1.png</file>
+        <file>resouses/2.webp</file>
+        <file>resouses/3.webp</file>
+        <file>resouses/4.webp</file>
+        <file>resouses/5.webp</file>
+        <file>resouses/6.webp</file>
+        <file>resouses/7.webp</file>
+    </qresource>
+</RCC>

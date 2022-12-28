@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MiniDraw</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="picture.qrc">
+    <normaloff>:/new/prefix1/resouses/7.webp</normaloff>:/new/prefix1/resouses/7.webp</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>MiniDraw</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionrectangle"/>
+   <addaction name="actionelliptical"/>
+   <addaction name="actionline"/>
+   <addaction name="actionfree_line"/>
+   <addaction name="actionpolygon"/>
+   <addaction name="actionundo"/>
+   <addaction name="actioncolor"/>
+  </widget>
+  <action name="actionrectangle">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/1.png</normaloff>:/new/prefix1/resouses/1.png</iconset>
+   </property>
+   <property name="text">
+    <string>rectangle</string>
+   </property>
+  </action>
+  <action name="actionelliptical">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/2.webp</normaloff>:/new/prefix1/resouses/2.webp</iconset>
+   </property>
+   <property name="text">
+    <string>elliptical</string>
+   </property>
+  </action>
+  <action name="actionline">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/3.webp</normaloff>:/new/prefix1/resouses/3.webp</iconset>
+   </property>
+   <property name="text">
+    <string>line</string>
+   </property>
+   <property name="toolTip">
+    <string>lineqew</string>
+   </property>
+  </action>
+  <action name="actionfree_line">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/4.webp</normaloff>:/new/prefix1/resouses/4.webp</iconset>
+   </property>
+   <property name="text">
+    <string>freehand</string>
+   </property>
+  </action>
+  <action name="actionpolygon">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/5.webp</normaloff>:/new/prefix1/resouses/5.webp</iconset>
+   </property>
+   <property name="text">
+    <string>polygon</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/6.webp</normaloff>:/new/prefix1/resouses/6.webp</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actioncolor">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/7.webp</normaloff>:/new/prefix1/resouses/7.webp</iconset>
+   </property>
+   <property name="text">
+    <string>color and width</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="picture.qrc"/>
+ </resources>
+ <connections/>
+</ui>

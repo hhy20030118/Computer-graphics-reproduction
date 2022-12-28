@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageWrappingClass</class>
+ <widget class="QMainWindow" name="ImageWrappingClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageWrapping</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="Basicanvas">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>211</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>607</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionsave"/>
+   <addaction name="actionopen"/>
+   <addaction name="actionRBF"/>
+   <addaction name="actionIDW"/>
+   <addaction name="actiondrawpoint"/>
+   <addaction name="actiondrawline"/>
+   <addaction name="actionundo"/>
+   <addaction name="actionrenew"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionadd_new">
+   <property name="text">
+    <string>add new ...</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/1.png</normaloff>:/new/prefix1/resouses/1.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/2.png</normaloff>:/new/prefix1/resouses/2.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionIDW">
+   <property name="text">
+    <string>IDW</string>
+   </property>
+   <property name="toolTip">
+    <string>IDW</string>
+   </property>
+  </action>
+  <action name="actionRBF">
+   <property name="text">
+    <string>RBF</string>
+   </property>
+  </action>
+  <action name="actiondrawpoint">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/3.png</normaloff>:/new/prefix1/resouses/3.png</iconset>
+   </property>
+   <property name="text">
+    <string>drawpoint</string>
+   </property>
+  </action>
+  <action name="actiondrawline">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/4.jpg</normaloff>:/new/prefix1/resouses/4.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>drawline</string>
+   </property>
+  </action>
+  <action name="actionOK">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Desktop/计算机图形学/作业2/6371.png_860.png</normaloff>../../Desktop/计算机图形学/作业2/6371.png_860.png</iconset>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/5.jpg</normaloff>:/new/prefix1/resouses/5.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionrenew">
+   <property name="icon">
+    <iconset resource="picture.qrc">
+     <normaloff>:/new/prefix1/resouses/6.png</normaloff>:/new/prefix1/resouses/6.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>renew the picture</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ImageWrapping.qrc"/>
+  <include location="picture.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionadd_new</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageWrappingClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
